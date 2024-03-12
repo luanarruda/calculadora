@@ -1,11 +1,16 @@
 <form>
-  <input type="number" [(ngModel)]="num1" name="num1"><!--[(bind de dois caminhos, o q digita na web guarda na web e atualiza no num1, da classse para o template do template para a classe)]-->
-  <input type="number" [(ngModel)]="num2" name="num2">
-  <button (click)="onClickSum()">+</button>
-  <button (click)="onClickSub()">-</button>
-  <button (click)="onClickMult()">x</button>
-  <button (click)="onClickDiv()">/</button>
-  {{resp}} <!--bind, ligar uma coisa aoutra--><!--interpolação {{}}-->
+    <div>
+      <input type="number" [(ngModel)]="num1"
+        name="num1"><!--[(bind de dois caminhos, o q digita na web guarda na web e atualiza no num1, da classse para o template do template para a classe)]-->
+      <input type="number" [(ngModel)]="num2" name="num2">
+    </div>
 
+    <button (click)="onClickSum()">+</button>
+    <button (click)="onClickSub()">-</button>
+    <button (click)="onClickMult()">x</button>
+    <button (click)="onClickDiv()">/</button>
+    <button (click)="onClickExp()">^</button>
+    <button (click)="onClickRad()">&radic;</button>
+    {{resp}} <!--bind, ligar uma coisa aoutra--><!--interpolação {{}}-->
 
 </form>

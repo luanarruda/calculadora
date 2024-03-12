@@ -26,4 +26,13 @@ export class FormCalcComponent {
   onClickDiv(){
     this.resp = this.num1 / this.num2;
   }
+
+  onClickExp(){
+    this.resp = this.num1 ** this.num2
+  }
+
+  onClickRad(){
+    this.resp = this.num1 ** (1/this.num2)
+  }
+
 }
